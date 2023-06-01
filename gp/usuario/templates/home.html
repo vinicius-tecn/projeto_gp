@@ -1,0 +1,48 @@
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light p-2" style="background-color: #70D6BC; height:65px;">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">GP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Conferencia de quantidade NFe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Conferencia Cadastral</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Formação de Preço</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">
+                  <i class="fas fa-user user-icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+    {% block content %}{% endblock %} 
+    {% block script %} {% endblock %}
+    
+</body>
+</html>

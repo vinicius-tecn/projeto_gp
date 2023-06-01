@@ -1,0 +1,44 @@
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'admin/css/index.css' %}">
+    <title>Login</title>
+</head>
+<body>
+    
+    <div id="page-content-wrapper">
+
+        <div class="limiter">
+          <div class="container-login100">
+              <div class="wrap-login100">
+          {% block content %}
+          {% endblock %}
+            </div> 
+          </div>
+      </div>
+    <!-- /#page-content-wrapper -->
+    
+    <!-- footer -->
+    <div class="footer">
+      <div class="row">
+        <div class="col-sm-3"><a href="http://www.lrautomacao.com.br%22%3Ewww.lrautomacao.com.br/</a></div>
+        <div class="col-sm-6"></div>
+        <div class="col-sm-3">(12)3939-3939</div>
+      </div>
+      <hr>
+      <div class="footer-copyright">
+        L&R Automação© | SISM® | Desenvolvido por <a href="https://www.youtan.com.br/%22%3E<u>Youtan</u></a>
+      </div>
+    </div>
+    </div>
+
+</body>
+</html>
+
